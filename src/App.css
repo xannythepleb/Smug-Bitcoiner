@@ -1,0 +1,59 @@
+/* App.css */
+body {
+  background-color: #121212; /* Dark background for modern look */
+  color: #FF9800; /* Orange text for contrast */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e; /* Slightly lighter black for the container */
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  width: 80%;
+  max-width: 500px; /* Max width for larger screens */
+}
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem; /* Larger font size for readability */
+}
+
+input {
+  background-color: #333;
+  color: white;
+  width: 70%; /* Responsive width */
+}
+
+button {
+  background-color: #FF9800;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth color transition and slight scale */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+button:hover {
+  background-color: #ffae42; /* Lighter orange on hover */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.data-display {
+  margin-top: 20px;
+  text-align: left; /* Align text to left for a cleaner look */
+  padding: 0 20px; /* Padding for text inside container */
+}
+
+p {
+  margin: 10px 0; /* Spacing between paragraphs */
+  font-size: 1.1rem; /* Slightly larger font size */
+}

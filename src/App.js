@@ -9,8 +9,8 @@ function App() {
   const [percentageChange, setPercentageChange] = useState(null);
 
   const handleDateChange = (event) => {
-    setDate(event.target.value);
-  };
+  setDate(event.target.value || ''); // Reset date to empty string if cleared
+};
 
   const formatDate = (dateString) => {
     const dateObj = new Date(dateString);
@@ -30,7 +30,8 @@ function App() {
     const dateObj = new Date(selectedDate);
 
     // Format the date to DD-MM-YYYY
-    const formattedDate = `${dateObj.getDate().toString().padStart(2, '0')}-${(dateObj.getMonth() + 1).toString().padStart(2, '0')}-${dateObj.getFullYear()}`;
+    // American date is a shitcoin
+    const formattedDate = `${dateObj.getDate().toString().padStart(2, '0')}-${(dateObj.getMonth() + 1).toString().padStart(2, '0')}-${dateObj.getFullYear()}`; // correct date format for API
 
     // CoinGecko API endpoint for historical data
     const historicalUrl = `https://api.coingecko.com/api/v3/coins/bitcoin/history?date=${formattedDate}&localization=false`;
@@ -64,7 +65,14 @@ function App() {
 
   return (
     <div className="container">
-      <input type="date" value={date} onChange={handleDateChange} />
+      <h1>Smug Bitcoiner</h1>
+      <p className="slogan">Has it pumped or dumped?</p>
+      <input
+      type="date"
+      value={date}
+      onChange={handleDateChange}
+      style={!date ? { color: '#999' } : {}}
+      />
       <button onClick={handleSubmit}>Get Bitcoin Prices</button>
       <div className="data-display">
         {priceOnDate && <p>Price on {formatDate(date)}: {formatPrice(priceOnDate)} USD</p>}

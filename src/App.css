@@ -57,3 +57,23 @@ p {
   margin: 10px 0; /* Spacing between paragraphs */
   font-size: 1.1rem; /* Slightly larger font size */
 }
+
+h1 {
+  color: orange; /* Main title color */
+  font-size: 2.5rem; /* Size of the title */
+  margin-bottom: 0.5rem; /* Space between title and slogan */
+}
+
+.slogan {
+  color: white; /* Slogan text color */
+  font-size: 1.2rem; /* Size of the slogan */
+  margin-bottom: 2rem; /* Space between slogan and the rest of the content */
+}
+
+input[type="date"] {
+  color: #999; /* grey unselected date */
+}
+
+input[type="date"]:valid {
+  color: orange; /* orange selected date */
+}

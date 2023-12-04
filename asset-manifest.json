@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Smug-Bitcoiner/static/css/main.94f83d6c.css",
+    "main.js": "/Smug-Bitcoiner/static/js/main.c8271d1d.js",
+    "static/js/787.91f77e1d.chunk.js": "/Smug-Bitcoiner/static/js/787.91f77e1d.chunk.js",
+    "index.html": "/Smug-Bitcoiner/index.html",
+    "main.94f83d6c.css.map": "/Smug-Bitcoiner/static/css/main.94f83d6c.css.map",
+    "main.c8271d1d.js.map": "/Smug-Bitcoiner/static/js/main.c8271d1d.js.map",
+    "787.91f77e1d.chunk.js.map": "/Smug-Bitcoiner/static/js/787.91f77e1d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f83d6c.css",
+    "static/js/main.c8271d1d.js"
+  ]
+}

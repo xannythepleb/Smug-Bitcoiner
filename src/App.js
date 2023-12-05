@@ -12,6 +12,7 @@ import {
 } from 'chart.js';
 import './App.css';
 
+// setup the chart
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
 function App() {
@@ -97,6 +98,7 @@ const fetchHistoricalData = async (selectedDate) => {
     }
   };
 
+// data for chart
   const fetchBitcoinPriceOnDate = async (selectedDate) => {
     try {
 
@@ -146,8 +148,12 @@ const fetchHistoricalData = async (selectedDate) => {
     ],
   };
 
-  // Chart options
+  // Chart styling
   const options = {
+    // make mobile friendly and bigger on desktop
+    responsive: true,
+    maintainAspectRatio: false,
+    // general styling
     scales: {
       x: {
         grid: {
@@ -203,8 +209,8 @@ const fetchHistoricalData = async (selectedDate) => {
       <button onClick={handleSubmit}>Get Bitcoin Prices</button>
       <div className="data-display">
         {historicalData.dates.length > 0 && (
-        <div>
-          <Line data={data} options={options} />
+        <div className="chart-container">
+        <Line data={data} options={options} />
         </div>
         )}
         {priceOnDate && <p>Price on {formatDate(date)}: {formatPrice(priceOnDate)} USD</p>}

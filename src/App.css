@@ -58,6 +58,7 @@ p {
   font-size: 1.1rem; /* Slightly larger font size */
 }
 
+/* title and slogan */
 h1 {
   color: orange; /* Main title color */
   font-size: 2.5rem; /* Size of the title */
@@ -91,4 +92,21 @@ input[type="date"]:valid {
     min-width: 250px;
     min-height: 250px;
   }
+}
+
+/* style the footer */
+.footer {
+  color: #999; /* Light grey color */
+  font-size: 0.8rem; /* Smaller font size */
+  text-align: center; /* Center-align text */
+  margin-top: 20px; /* Space from the content above */
+  padding: 10px; /* Padding for spacing */
+}
+.footer a {
+  color: orange; /* Orange color for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Adds underline on hover */
 }

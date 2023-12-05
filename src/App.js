@@ -217,6 +217,9 @@ const fetchHistoricalData = async (selectedDate) => {
         {currentPrice && <p>Current Price: {formatPrice(currentPrice)} USD</p>}
         {percentageChange && <p>Percentage Change: {formatPrice(percentageChange)}%</p>}
       </div>
+      <footer className="footer">
+      <a href="https://github.com/xannythepleb/Smug-Bitcoiner/tree/main" target="_blank" rel="noopener noreferrer">Open source.</a> Powered by the <a href="https://www.coingecko.com/en/api" target="_blank" rel="noopener noreferrer">CoinGecko API</a>.
+      </footer>
     </div>
   );
 }

@@ -198,7 +198,7 @@ const fetchHistoricalData = async (selectedDate) => {
 
   return (
     <div className="container">
-      <h1>Smug Bitcoiner</h1>
+      <h1>Smug ₿itcoiner</h1>
       <p className="slogan">Has it pumped or dumped?</p>
       <input
       type="date"
@@ -206,7 +206,7 @@ const fetchHistoricalData = async (selectedDate) => {
       onChange={handleDateChange}
       style={!date ? { color: '#999' } : {}}
       />
-      <button onClick={handleSubmit}>Get Bitcoin Prices</button>
+      <button onClick={handleSubmit}>LFG!</button>
       <div className="data-display">
         {historicalData.dates.length > 0 && (
         <div className="chart-container">
@@ -218,7 +218,7 @@ const fetchHistoricalData = async (selectedDate) => {
         {percentageChange && <p>Percentage Change: {formatPrice(percentageChange)}%</p>}
       </div>
       <footer className="footer">
-      <a href="https://github.com/xannythepleb/Smug-Bitcoiner/tree/main" target="_blank" rel="noopener noreferrer">Open source.</a> Powered by the <a href="https://www.coingecko.com/en/api" target="_blank" rel="noopener noreferrer">CoinGecko API</a>.
+      <i><a href="https://github.com/xannythepleb/Smug-Bitcoiner/tree/main" target="_blank" rel="noopener noreferrer">Open source.</a> Powered by the <a href="https://www.coingecko.com/en/api" target="_blank" rel="noopener noreferrer">CoinGecko API.</a></i>
       </footer>
     </div>
   );

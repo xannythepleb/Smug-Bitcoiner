@@ -1,5 +1,7 @@
 # Smug Bitcoiner Price Tracker
 
+![image](https://github.com/xannythepleb/Smug-Bitcoiner/assets/133000108/cc7eb6a1-f668-4e09-a6ce-3232e873c73f)
+
 ## Overview
 Created on a lark so that you can lookup the price of Bitcoin on any given date so if someone said "Bitcoin is a scam" you can tell them how much it's increased since they said it, hence the name, but it's also a useful tool for checking out what's been going on in Bitcoin price action since the last time you stacked sats or even when you first bought some in 2011.
 

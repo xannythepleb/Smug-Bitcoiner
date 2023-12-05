@@ -16,8 +16,8 @@ body {
   border-radius: 10px;
   background-color: #1e1e1e; /* Slightly lighter black for the container */
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-  width: 80%;
-  max-width: 500px; /* Max width for larger screens */
+  width: 93%;
+  max-width: 400px; /* Max width for larger screens */
 }
 
 input, button {
